@@ -1,0 +1,77 @@
+body{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 200px;
+    height: 200px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.child{
+    height: 20%;
+    width: 10px;
+    margin: 2px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.child-1,.child-4,.child-7{
+    transition: all 2s ease;
+    animation-name: a;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.child-3,.child-6,.child-9{
+    transition: all 2s ease;
+    animation-name: b;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.child-2,.child-5,.child-8{
+    transition: all 2s ease;
+    animation-name: c;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes a {
+     0%{
+        transform: scaleY(1);
+     }
+     50%{
+        transform: scaleY(2);
+     }
+     100%{
+        transform: scaleY(1);
+     }
+}
+@keyframes b {
+     0%{
+        transform: scaleY(2);
+     }
+     50%{
+        transform: scaleY(1);
+     }
+     100%{
+        transform: scaleY(2);
+     }
+}
+@keyframes c {
+    0%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(2);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
